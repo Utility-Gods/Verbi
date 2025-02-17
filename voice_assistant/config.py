@@ -1,5 +1,3 @@
-# voice_assistant/config.py
-
 import os
 from dotenv import load_dotenv
 
@@ -23,7 +21,7 @@ class Config:
     # Model selection
     TRANSCRIPTION_MODEL = 'groq'  # possible values: openai, groq, deepgram, fastwhisperapi
     RESPONSE_MODEL = 'groq'  # possible values: openai, groq, ollama
-    TTS_MODEL = 'cartesia'  # possible values: openai, deepgram, elevenlabs, melotts, cartesia
+    TTS_MODEL = 'openai'  # possible values: openai, deepgram, elevenlabs, melotts, cartesia
 
     # currently using the MeloTTS for local models. here is how to get started:
     # https://github.com/myshell-ai/MeloTTS/blob/main/docs/install.md#linux-and-macos-installs1
