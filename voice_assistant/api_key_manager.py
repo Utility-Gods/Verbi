@@ -22,7 +22,7 @@ API_KEY_MAPPING= {
 def get_api_key(service, model):
     """
     Select the API key for the specified service and model
-    
+
     Returns:
     str: The API key for the transcription, response or tts service.
     """
@@ -31,7 +31,7 @@ def get_api_key(service, model):
 def get_transcription_api_key():
     """
     Select the correct API key for transcription based on the configured model.
-    
+
     Returns:
     str: The API key for the transcription service.
     """
@@ -40,7 +40,7 @@ def get_transcription_api_key():
 def get_response_api_key():
     """
     Select the correct API key for response generation based on the configured model.
-    
+
     Returns:
     str: The API key for the response generation service.
     """
@@ -49,7 +49,7 @@ def get_response_api_key():
 def get_tts_api_key():
     """
     Select the correct API key for text-to-speech based on the configured model.
-    
+
     Returns:
     str: The API key for the TTS service.
     """

@@ -9,7 +9,7 @@ load_dotenv()
 class Config:
     """
     Configuration class to hold the model selection and API keys.
-    
+
     Attributes:
         TRANSCRIPTION_MODEL (str): The model to use for transcription ('openai', 'groq', 'deepgram', 'fastwhisperapi', 'local').
         RESPONSE_MODEL (str): The model to use for response generation ('openai', 'groq', 'local').
@@ -21,12 +21,12 @@ class Config:
         LOCAL_MODEL_PATH (str): Path to the local model.
     """
     # Model selection
-    TRANSCRIPTION_MODEL = 'deepgram'  # possible values: openai, groq, deepgram, fastwhisperapi
-    RESPONSE_MODEL = 'openai'  # possible values: openai, groq, ollama
-    TTS_MODEL = 'openai'  # possible values: openai, deepgram, elevenlabs, melotts, cartesia
+    TRANSCRIPTION_MODEL = 'groq'  # possible values: openai, groq, deepgram, fastwhisperapi
+    RESPONSE_MODEL = 'groq'  # possible values: openai, groq, ollama
+    TTS_MODEL = 'cartesia'  # possible values: openai, deepgram, elevenlabs, melotts, cartesia
 
     # currently using the MeloTTS for local models. here is how to get started:
-    # https://github.com/myshell-ai/MeloTTS/blob/main/docs/install.md#linux-and-macos-install
+    # https://github.com/myshell-ai/MeloTTS/blob/main/docs/install.md#linux-and-macos-installs1
 
     # LLM Selection
     OLLAMA_LLM="llama3:8b"
@@ -51,7 +51,7 @@ class Config:
     def validate_config():
         """
         Validate the configuration to ensure all necessary environment variables are set.
-        
+
         Raises:
             ValueError: If a required environment variable is not set.
         """
@@ -81,7 +81,7 @@ class Config:
             raise ValueError(
                 f"Invalid {attribute}. Must be one of {valid_options}"
             )
-        
+
     @staticmethod
     def _validate_api_key(model_attr, model_value, api_key_attr):
         if getattr(Config, model_attr) == model_value and not getattr(Config, api_key_attr):
