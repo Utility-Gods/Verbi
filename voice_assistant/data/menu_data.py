@@ -5,13 +5,13 @@ class MenuData:
             "Drinks": [
                 {
                     "name": "Diet Coke",
-                    "price": 150,
+                    "price": 15,
                     "currency": "ZAR",
                     "description": "Crisp, refreshing taste you know and love"
                 },
                 {
                     "name": "Lemon Soda",
-                    "price": 150,
+                    "price": 15,
                     "currency": "ZAR",
                     "description": "Carbonated soft drink with lemon juice"
                 }
@@ -19,19 +19,19 @@ class MenuData:
             "Main Course": [
                 {
                     "name": "Cheese Manakish",
-                    "price": 200,
+                    "price": 20,
                     "currency": "ZAR",
                     "description": "Lebanese pizza with cheese"
                 },
                 {
                     "name": "Manakish",
-                    "price": 300,
+                    "price": 30,
                     "currency": "ZAR",
                     "description": "Traditional Levantine dough with za'atar"
                 },
                 {
                     "name": "Falafel Platter Full",
-                    "price": 350,
+                    "price": 35,
                     "currency": "ZAR",
                     "description": "Complete platter with falafel, bread, fries and sides"
                 }
@@ -39,12 +39,12 @@ class MenuData:
             "Salads": [
                 {
                     "name": "Fattoush Salad",
-                    "price": 300,
+                    "price": 30,
                     "description": "Fresh veggies with crispy pita and sumac dressing"
                 },
                 {
                     "name": "Fatteh",
-                    "price": 250,
+                    "price": 25,
                     "description": "Layered dish with pita chips and tahini sauce"
                 }
             ]
@@ -57,7 +57,8 @@ class MenuData:
             "Coolers": [
                 {
                     "name": "Mojito Cooler",
-                    "price": 12000,
+                    "price": 12,
+                    "currency": "ZAR",
                     "description": "Refreshing summer mojito cooler"
                 }
             ]
